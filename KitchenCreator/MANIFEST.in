@@ -1,0 +1,3 @@
+include kitchencreator/config/deployment.ini_tmpl
+recursive-include kitchencreator/public *
+recursive-include kitchencreator/templates *

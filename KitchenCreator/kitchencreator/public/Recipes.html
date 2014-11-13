@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>Lab Two</title>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <style>
+        body {
+        background-image: url('smallbg.jpg');
+      }
+      .newFont{
+        color: white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        font-size: 250%;
+      }
+      .visibleFont {
+    color: yellow;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 250%;
+}
+        </style>
+    </head>
+    <body>
+        <div id="container">
+          <div class="panel panel-default" style="width: 50%;">
+              <div class="panel panel-heading">
+                  <h1>Recipes</h1>
+              </div>
+
+              <div class="panel panel-body">
+                  <p class="lead">This is my Networking Lab 2
+                  this demonstrates ajax interacting with a RESTful interface</p>
+                  <br>
+                  <p>Enter recipe/ingredient info here:
+                    <input type="text" name="TextVal" value="" id="textVals">
+
+                  </p>
+                  <div id="agentButtons">
+                    <br>
+                  <button type="button" onClick="Post()">Post a new recipe</button>
+                  <button type="button" onClick="GetRecipe()" id="get">Get a recipe</button>
+                  <button type="button" onClick="Update()">Update a recipe formula</button>
+                  <button type="button" onClick="Delete()">Delete a recipe</button>
+                  </div>
+                  <div id="textRegion">
+                    <br>
+                    <h2>Result</h2>
+                  <br>
+                  <textarea rows="4" cols="50" id="textResponse">
+                  </textarea>
+                  </div>
+                  <div id="test" class="test"></div>
+              </div>
+              <h3>Andrew Tanner 0755478, Lab 2</h3>
+          </div>
+        </div>
+
+
+
+
+
+        <!-- Scripts Begin-->
+         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+       <script src="js/jquery-1.11.1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+         <script src="js/bootstrap.min.js"></script>
+         <script src="js/custom.js"></script>
+         <script src="js/recipe.js"></script>
+    </body>
+</html>
